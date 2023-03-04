@@ -65,16 +65,28 @@
                     "Eighteen","Nineteen"];
             var num2=["","","Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","Ninety","Hundred"];
             var number=document.getElementById("number").value;
-            var [numArray1,numArray2]=number.split("");
+            var [numArray1,numArray2,numArray3]=number.split("");
 
             flag=""
+           if(number==""){
+            flag="Plaese Enter Value In Textbox"
+           }else{
             if(number>=0 && number<20){
                 flag=num1[number]
             }else if(number>=20 && number<100){
-                flag=`${num2[numArray1].toUpperCase()} ${num1[numArray2].toUpperCase()}` ;
-            }else {
-                flag="Number Between 1 to 99 only"
+                flag=`${num2[numArray1]} ${num1[numArray2]}`;
+            }else if(number>=10 && number<1000){
+                if(numArray2==0){
+                    flag=`${num1[numArray1]} Hundred ${num1[numArray3]}` ;
+                }else  if(numArray2<2){
+                    flag=`${num1[numArray1]} Hundred ${num1[([numArray2,numArray3]).join("")]}` ;
+                } else{
+                    flag=`${num1[numArray1]} Hundred ${num2[numArray2]} ${num1[numArray3]}` ;
+                }
+            }else{
+                flag="Number Between 1 to 1000 only"
             }
+           }
             document.querySelector("h3").innerHTML=flag;
             document.getElementById("number").value="";
             document.getElementById("number").focus();
@@ -82,6 +94,7 @@
         }
         setInterval(backgroundChange, 1000);
     </script>
+    
    
 </head>
 <body class="container-fluid">
