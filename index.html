@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            
+            
+        }
+        input:focus{
+            outline:none;
+            box-shadow:0px 0px 5px 1px rgb(255, 196, 0);
+            border:1px solid rgb(255, 196, 0);
+           
+           
+        }
+        input{
+            border:1px solid rgb(176, 176, 176);
+            height: 40px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        main>div{
+            
+           padding: 0px 20px 10px 20px;
+            border: 1px solid rgb(196, 193, 193);
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px rgb(196, 193, 193);;
+        }
+        button{
+            width: 100%;
+            border: none;
+            padding: 10px;
+            background-color: rgb(255, 196, 0);;
+            font-size: 15px;
+            font-weight:600;
+            color: white;
+            border-radius: 5px ;
+            margin-top: 20px;
+           
+        }
+    </style>
+    <script>
+        function backgroundColor(){
+           
+        }
+        
+        function ConvertInWord(){
+            var number=document.getElementById("number").value;
+            
+            flag=""
+            if(number==0){
+                flag="Zero"
+            }else if(number==1){
+                flag="One"
+            }else if(number==2){
+                flag="Two"
+            }else if(number==3){
+                flag="Three"
+            }else if(number==4){
+                flag="Four"
+            }else if(number==5){
+                flag="Five"
+            }else if(number==6){
+                flag="Six"
+            }else if(number==7){
+                flag="Seven"
+            }else if(number==8){
+                flag="Eight"
+            }else if(number==9){
+                flag="Nine"
+            }else if(number==10){
+                flag="Ten"
+            } else  if(number==1){
+                flag="Eleven"
+            }else if(number==12){
+                flag="Twelve"
+            }else if(number==13){
+                flag="Thirteen"
+            }else if(number==14){
+                flag="Fourteen"
+            }else if(number==15){
+                flag="Fifteen"
+            }else if(number==16){
+                flag="Sixteen"
+            }else if(number==17){
+                flag="Seventeen"
+            }else if(number==18){
+                flag="Eighteen"
+            }else if(number==19){
+                flag="Nineteen"
+            }else if(number==20){
+                flag="Twenty"
+            } else if(number==21){
+                flag="Twenty One"
+            } else if(number==22){
+                flag="Twenty Two"
+            } else if(number==23){
+                flag="Twenty Three"
+            } else if(number==24){
+                flag="Twenty Four"
+            } else if(number==25){
+                flag="Twenty Five"
+            } else if(number==26){
+                flag="Twenty Six"
+            } else if(number==27){
+                flag="Twenty Seven"
+            } else if(number==28){
+                flag="Twenty Eight"
+            } else if(number==29){
+                flag="Twenty Nine"
+            } else if(number==30){
+                flag="Thirty"
+            } else if(number==31){
+                flag="Thirty One"
+            } else if(number==32){
+                flag="Thirty Two"
+            } else if(number==33){
+                flag="Thirty Three"
+            } else if(number==34){
+                flag="Thirty Four"
+            } else if(number==35){
+                flag="Thirty Five"
+            } else if(number==36){
+                flag="Thirty Six"
+            } else if(number==37){
+                flag="Thirty Seven"
+            } else if(number==38){
+                flag="Thirty Eight"
+            } else if(number==39){
+                flag="Thirty Nine"
+            } else if(number==40){
+                flag="Fourty"
+            } else if(number==41){
+                flag="Fourty One"
+            } else if(number==42){
+                flag="Fourty Two"
+            } else if(number==43){
+                flag="Fourty Three"
+            } else if(number==44){
+                flag="Fourty Four"
+            } else if(number==45){
+                flag="Fourty Five"
+            } else if(number==46){
+                flag="Fourty Six"
+            } else if(number==47){
+                flag="Fourty Seven"
+            } else if(number==48){
+                flag="Fourty Eight"
+            } else if(number==49){
+                flag="Fourty Nine"
+            } else if(number==50){
+                flag="Fifty"
+            } else if(number==51){
+                flag="Fifty One"
+            } else if(number==52){
+                flag="Fifty Two"
+            } else if(number==53){
+                flag="Fifty Three"
+            } else if(number==54){
+                flag="Fifty Four"
+            } else if(number==55){
+                flag="Fifty Five"
+            } else if(number==56){
+                flag="Fifty Six"
+            } else if(number==57){
+                flag="Fifty Seven"
+            } else if(number==58){
+                flag="Fifty Eight"
+            } else if(number==59){
+                flag="Fifty Nine"
+            } else if(number==60){
+                flag="Sixty"
+            } else if(number==61){
+                flag="Sixty One"
+            } else if(number==62){
+                flag="Sixty Two"
+            } else if(number==63){
+                flag="Sixty Three"
+            } else if(number==64){
+                flag="Sixty Four"
+            } else if(number==65){
+                flag="Sixty Five"
+            } else if(number==66){
+                flag="Sixty Six"
+            } else if(number==67){
+                flag="Sixty Seven"
+            } else if(number==68){
+                flag="Sixty Eight"
+            } else if(number==69){
+                flag="Sixty Nine"
+            } else if(number==70){
+                flag="Seventy"
+            } else if(number==71){
+                flag="Seventy One"
+            } else if(number==72){
+                flag="Seventy Two"
+            } else if(number==73){
+                flag="Seventy Three"
+            } else if(number==74){
+                flag="Seventy Four"
+            } else if(number==75){
+                flag="Seventy Five"
+            } else if(number==76){
+                flag="Seventy Six"
+            } else if(number==77){
+                flag="Seventy Seven"
+            } else if(number==78){
+                flag="Seventy Eight"
+            } else if(number==79){
+                flag="Seventy Nine"
+            } else if(number==80){
+                flag="Eighty"
+            } else if(number==81){
+                flag="Eighty One"
+            } else if(number==82){
+                flag="Eighty Two"
+            } else if(number==83){
+                flag="Eighty Three"
+            } else if(number==84){
+                flag="Eighty Four"
+            } else if(number==85){
+                flag="Eighty Five"
+            } else if(number==86){
+                flag="Eighty Six"
+            } else if(number==87){
+                flag="Eighty Seven"
+            } else if(number==88){
+                flag="Eighty Eight"
+            } else if(number==89){
+                flag="Eighty Nine"
+            } else if(number==90){
+                flag="Ninety"
+            } else if(number==91){
+                flag="Ninety One"
+            } else if(number==92){
+                flag="Ninety Two"
+            } else if(number==93){
+                flag="Ninety Three"
+            } else if(number==94){
+                flag="Ninety Four"
+            } else if(number==95){
+                flag="Ninety Five"
+            } else if(number==96){
+                flag="Eighty Six"
+            } else if(number==97){
+                flag="Ninety Seven"
+            } else if(number==98){
+                flag="Ninety Eight"
+            } else if(number==99){
+                flag="Ninety Nine"
+            } else if(number==100){
+                flag="One Hundred"
+            } else {
+                flag="Number Between 1 To 100 Only"
+            }
+            document.querySelector("h3").innerHTML=flag;
+            document.getElementById("number").value="";
+            document.getElementById("number").focus();
+            
+            var main=document.getElementById("main");
+            color=parseInt(Math.random()*1000);
+            main.style.backgroundColor="#"+color 
+        }
+    </script>
+   
+</head>
+<body class="container-fluid">
+    <main>
+        <div>
+            <h2>Convert Number Into Words</h2>
+            <input type="number"id="number"value="0">
+            <button onclick="ConvertInWord()">Convert</button>
+            <h3 align="center"style="font-family:arial;text-transform: uppercase;">Zero</h3>
+        </div>
+    </main>
+</body>
+</html>
