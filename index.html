@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="numberToWords.js"></script>
     <title>Document</title>
     <style>
         main{
@@ -16,8 +17,8 @@
         }
         input:focus{
             outline:none;
-            box-shadow:0px 0px 5px 1px rgb(255, 196, 0);
-            border:1px solid rgb(255, 196, 0);
+            box-shadow:0px 0px 15px 2px rgb(255, 255, 255);
+            border:2px solid rgb(253, 253, 40);
            
            
         }
@@ -34,7 +35,8 @@
            padding: 0px 20px 10px 20px;
             border: 1px solid rgb(196, 193, 193);
             border-radius: 15px;
-            box-shadow: 0px 0px 5px rgb(196, 193, 193);;
+            box-shadow: 0px 0px 5px rgb(196, 193, 193);
+            color: white;
         }
         button{
             width: 100%;
@@ -50,6 +52,12 @@
         }
     </style>
     <script>
+        function backgroundChange(){
+            var div=document.querySelector("div");
+            color=parseInt(Math.random()*1000000);
+            div.style.backgroundColor="#"+color
+           
+        }
         
         function ConvertInWord(){
             var number=document.getElementById("number").value;
@@ -263,7 +271,9 @@
             document.querySelector("h3").innerHTML=flag;
             document.getElementById("number").value="";
             document.getElementById("number").focus();
+        
         }
+        setInterval(backgroundChange, 1000);
     </script>
    
 </head>
